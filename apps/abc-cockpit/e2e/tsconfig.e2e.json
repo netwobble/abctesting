@@ -1,0 +1,22 @@
+{
+  "extends": "../../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../../dist/out-tsc/e2e/abc-cockpit",
+    "module": "commonjs",
+    "target": "es5",
+    "types": [
+      "jasmine",
+      "jasminewd2",
+      "node"
+    ]
+  },
+  "include": [
+    "../**/*.ts"
+    /* add all lazy-loaded libraries here: "../../../libs/my-lib/index.ts" */
+  
+    , "../../../libs/core/cockpit/cockpit-dashboard/index.ts"
+],
+  "exclude": [
+    "**/*.spec.ts"
+  ]
+}
